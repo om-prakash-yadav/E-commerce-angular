@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
@@ -24,6 +25,11 @@ const appRoutes:Routes = [
   {path:'**',redirectTo:'not-found'}
 ]
 
+import { CarouselComponent } from './carousel/carousel.component';
+
+import { FooterComponent } from './footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +40,11 @@ const appRoutes:Routes = [
     CartsComponent,
     ContactComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent,
+    HeaderComponent,
+    CarouselComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
