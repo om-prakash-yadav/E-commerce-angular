@@ -5,7 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
+
 import { CarouselComponent } from './carousel/carousel.component';
+
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +17,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     LoginComponent,
     HeaderComponent,
     CarouselComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
