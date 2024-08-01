@@ -1,8 +1,6 @@
 /* bootstrap carousel css  */
 
-#demo{
-    background-color: rgb(0, 0, 0);
-}
+
 .carousel-inner .carousel-item {
 	height: 90vh;
 	min-height: 300px;
