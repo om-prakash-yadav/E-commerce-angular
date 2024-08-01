@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { CartsComponent } from './carts/carts.component';
@@ -43,7 +42,7 @@ import { FooterComponent } from './footer/footer.component';
     NotFoundComponent,
     LoginComponent,
     HeaderComponent,
-    CarouselComponent
+    CarouselComponent,
     FooterComponent
   ],
   imports: [
