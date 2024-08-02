@@ -9,7 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { CartsComponent } from './carts/carts.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-
+import { TemplateModule } from './template/template.module';
 import { RouterModule,Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -37,7 +37,6 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     ProductsComponent,
     CartsComponent,
-    ContactComponent,
     AboutComponent,
     NotFoundComponent,
     LoginComponent,
@@ -47,7 +46,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    TemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
