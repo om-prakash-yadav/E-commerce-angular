@@ -1,20 +1,61 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { AboutComponent } from './about/about.component';
+=======
+import { LoginComponent } from './login/login.component';
+>>>>>>> main
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { CartsComponent } from './carts/carts.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+
+import { RouterModule,Routes } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+const appRoutes:Routes = [
+  {path:'',component:HomeComponent},
+  {path:'products',component:ProductsComponent},
+  {path:'carts',component:CartsComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'about',component:AboutComponent},
+  {path:'login',component:LoginComponent},
+  {path:'not-found',component:NotFoundComponent},
+  {path:'**',redirectTo:'not-found'}
+]
+
+import { CarouselComponent } from './carousel/carousel.component';
+
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+<<<<<<< HEAD
     AboutComponent
+=======
+    LoginComponent,
+    HomeComponent,
+    ProductsComponent,
+    CartsComponent,
+    ContactComponent,
+    AboutComponent,
+    NotFoundComponent,
+    LoginComponent,
+    HeaderComponent,
+    CarouselComponent,
+    FooterComponent
+>>>>>>> main
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
