@@ -8,8 +8,8 @@
 .navbar-brand {
 	display: flex;
 	align-items: center;
-	font-family: "Shadows Into Light", cursive;
-	font-weight: bold;
+	/* font-family: "Shadows Into Light", cursive; */
+	font-weight: bolder;
 }
 
 .navbar-brand img {
