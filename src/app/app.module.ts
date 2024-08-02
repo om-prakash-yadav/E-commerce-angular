@@ -9,7 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { CartsComponent } from './carts/carts.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-
+import { TemplateModule } from './template/template.module';
 import { RouterModule,Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -32,13 +32,13 @@ const appRoutes:Routes = [
     HomeComponent,
     ProductsComponent,
     CartsComponent,
-    ContactComponent,
     AboutComponent,
     NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    TemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
