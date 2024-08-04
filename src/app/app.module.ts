@@ -6,7 +6,6 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
-import { CartsComponent } from './carts/carts.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { TemplateModule } from './template/template.module';
@@ -16,7 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const appRoutes:Routes = [
   {path:'',component:HomeComponent},
   {path:'products',component:ProductsComponent},
-  {path:'carts',component:CartsComponent},
+  {path:'cart',component:CartComponent},
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
@@ -39,7 +38,6 @@ import { AppRoutingModule } from './app-routing.module';
     LoginComponent,
     HomeComponent,
     ProductsComponent,
-    CartsComponent,
     AboutComponent,
     NotFoundComponent,
     LoginComponent,
