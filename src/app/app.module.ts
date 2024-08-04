@@ -7,21 +7,27 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 
 import { CarouselComponent } from './carousel/carousel.component';
-
 import { FooterComponent } from './footer/footer.component';
-
+import { CartComponent } from './cart/cart.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import{ HttpClientModule}from '@angular/common/http'
+// import { ProductModule } from './product/product.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    CarouselComponent
-    FooterComponent
+    CarouselComponent,
+    FooterComponent,
+    CartComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
