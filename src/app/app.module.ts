@@ -25,9 +25,12 @@ const appRoutes:Routes = [
 ]
 
 import { CarouselComponent } from './carousel/carousel.component';
-
 import { FooterComponent } from './footer/footer.component';
-
+import { CartComponent } from './cart/cart.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import{ HttpClientModule}from '@angular/common/http'
+import { AppRoutingModule } from './app-routing.module';
+// import { ProductModule } from './product/product.module';
 
 @NgModule({
   declarations: [
@@ -42,12 +45,15 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     HeaderComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
-    TemplateModule
+    AppRoutingModule, 
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
