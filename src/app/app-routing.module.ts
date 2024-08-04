@@ -7,10 +7,11 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const routes:Routes = [
   {path:'',component:HomeComponent},
-  {path:'products',component:ProductsComponent},
+  {path:'products',component:ProductListComponent},
   {path:'carts',component:CartComponent},
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
