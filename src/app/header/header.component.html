@@ -19,7 +19,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLinkActive="active" routerLink="carts"><i
-                            class="fas fa-shopping-cart me-2"></i>Cart</a>
+                            class="fas fa-shopping-cart me-2"></i>Cart <span *ngIf="cartItems.length>0"
+                            class="badge bg-success"> {{cartItems.length}}</span></a>
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLinkActive="active" routerLink="contact"><i

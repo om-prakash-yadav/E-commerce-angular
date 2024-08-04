@@ -12,6 +12,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -27,11 +30,14 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     CarouselComponent,
     FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
