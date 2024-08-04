@@ -5,7 +5,6 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
-import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { TemplateModule } from './template/template.module';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -28,7 +27,6 @@ import { ProductListComponent } from './product-list/product-list.component';
     HeaderComponent,
     CarouselComponent,
     FooterComponent,
-    ContactComponent,
     ProductListComponent
   ],
   imports: [
