@@ -12,6 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
@@ -27,12 +28,11 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     CarouselComponent,
     FooterComponent,
-    CartComponent,
+    ContactComponent,
     ProductListComponent
   ],
   imports: [
     BrowserModule,
-    TemplateModule,
     AppRoutingModule
   ],
   providers: [],
