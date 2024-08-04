@@ -2,34 +2,39 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="../../assets/images/shoes.png" alt="Logo" width="65" height="65"
-                class="d-inline-block align-text-top me-2" > Urban Walks </a>
-                <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-center" [class.show]="navbarOpen" id="navbarNav">
+                class="d-inline-block align-text-top me-2"> Urban Walks </a>
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" [class.show]="navbarOpen" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item" >
-                    <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"  
-                    routerLink="/"><i class="fas fa-home me-2"></i>Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+                        routerLink="/"><i class="fas fa-home me-2"></i>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" routerLink="products"><i class="fas fa-box me-2"></i>Products</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" routerLinkActive="active" routerLink="carts"><i class="fas fa-shopping-cart me-2"></i>Cart</a>
+                    <a class="nav-link" routerLinkActive="active" routerLink="products"><i
+                            class="fas fa-box me-2"></i>Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" routerLink="contact"><i class="fas fa-envelope me-2"></i>Contact</a>
+                    <a class="nav-link" routerLinkActive="active" routerLink="carts"><i
+                            class="fas fa-shopping-cart me-2"></i>Cart</a>
                 </li>
-                <li class="nav-item"
-                routerLinkActive="active">
-                    <a class="nav-link " routerLinkActive="active" routerLink="about"><i class="fas fa-info-circle me-2"></i>About</a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="contact"><i
+                            class="fas fa-envelope me-2"></i>Contact</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link " routerLinkActive="active" routerLink="about"><i
+                            class="fas fa-info-circle me-2"></i>About</a>
                 </li>
                 <li class="nav-item nav-item-login d-lg-none">
-                    <a class="nav-link" routerLinkActive="active" routerLink="login"><i class="fas fa-sign-in-alt me-2"></i>Login</a>
+                    <a class="nav-link" routerLinkActive="active" routerLink="login"><i
+                            class="fas fa-sign-in-alt me-2"></i>Login</a>
                 </li>
             </ul>
         </div>
-        <button class="btn btn-login d-none d-lg-block"  routerLink="login"><a class="buttonlogin" >Login</a></button>
+        <button class="btn btn-login d-none d-lg-block" routerLink="login"><a class="buttonlogin">Login</a></button>
     </div>
 </nav>

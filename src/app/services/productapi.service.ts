@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductapiService {
-  url="https://fakestoreapi.com/products";
+  apiUrl = "https://fakestoreapi.com/products";
 
-  constructor(private http:HttpClient) { }
-  Products(){
-    return this.http.get(this.url);
+  constructor(private http: HttpClient) { }
+
+  getProducts(): Observable<any> {
+    return this.http.get<any>(this.apiUrl);
   }
-  
+
 }

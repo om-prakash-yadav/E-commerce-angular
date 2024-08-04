@@ -11,7 +11,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProductListComponent } from './product-list/product-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,11 +27,11 @@ import { ProductListComponent } from './product-list/product-list.component';
     HeaderComponent,
     CarouselComponent,
     FooterComponent,
-    ProductListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
