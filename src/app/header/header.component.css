@@ -45,8 +45,8 @@
 
 .btn-login {
 	border: 2px solid gold;
-	padding: 6px 14px;
-	border-radius: 10px;	
+	padding: 8px 20px;
+	border-radius: 20px;
 }
 
 .btn-login:hover {
@@ -100,8 +100,7 @@
 .buttonlogin {
 	text-decoration: none;
 	color: white;
-    font-weight: normal;
-	font-size: small;
+    font-weight: bold;
 }
 
 .buttonlogin:hover {
