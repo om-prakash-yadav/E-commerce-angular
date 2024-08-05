@@ -19,14 +19,15 @@ const appRoutes:Routes = [
   {path:'carts',component:CartsComponent},
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
-  {path:'login',component:LoginComponent},
   {path:'not-found',component:NotFoundComponent},
+  {path:'login',component:LoginComponent},
   {path:'**',redirectTo:'not-found'}
 ]
 
 import { CarouselComponent } from './carousel/carousel.component';
 
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
