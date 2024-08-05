@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject,Observable } from 'rxjs';
 
 @Injectable({
@@ -13,6 +14,7 @@ export class AuthService {
     this.username.next(username);
     window.localStorage.setItem('isLogIn','true');
     window.localStorage.setItem('username',`${username}`);
+    
   }
   logOut(){
     this.isLoggedIn.next(false);
