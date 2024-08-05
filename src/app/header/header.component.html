@@ -16,6 +16,11 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLinkActive="active" routerLink="products"><i
                             class="fas fa-box me-2"></i>Products</a>
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="nav-link" routerLinkActive="active" routerLink="products"><i class="fas fa-box me-2"></i>Products</a>
+                </li>
+                <li class="nav-item" *ngIf="isLoggedIn" >
+                    <a class="nav-link" routerLinkActive="active" routerLink="carts"><i class="fas fa-shopping-cart me-2"></i>Cart</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLinkActive="active" routerLink="carts"><i
@@ -31,12 +36,18 @@
                     <a class="nav-link " routerLinkActive="active" routerLink="about"><i
                             class="fas fa-info-circle me-2"></i>About</a>
                 </li>
-                <li class="nav-item nav-item-login d-lg-none">
-                    <a class="nav-link" routerLinkActive="active" routerLink="login"><i
-                            class="fas fa-sign-in-alt me-2"></i>Login</a>
+                <li *ngIf="isLoggedIn" class="nav-item nav-item-login d-lg-none">
+                    <a class="nav-link" routerLinkActive="active" ><i class="fas fa-sign-in-alt me-2"></i>Login</a>
+                </li>
+                <li *ngIf="!isLoggedIn" class="nav-item nav-item-login d-lg-none">
+                    <a class="nav-link" (click)="logout()" routerLinkActive="active" ><i class="fas fa-sign-in-alt me-2"></i>Logout</a>
                 </li>
             </ul>
         </div>
-        <button class="btn btn-login d-none d-lg-block" routerLink="login"><a class="buttonlogin">Login</a></button>
+        <div class="profile">
+            <!-- <p style="color: white;">{{username}}</p> -->
+            <button *ngIf="!isLoggedIn" class="btn btn-login d-none d-lg-block" routerLink="login" ><a class="buttonlogin" >Login</a></button>
+            <button *ngIf="isLoggedIn" (click)="logout()" class="btn btn-login d-none d-lg-block" ><a class="buttonlogin" >Logout</a></button>
+        </div>
     </div>
 </nav>

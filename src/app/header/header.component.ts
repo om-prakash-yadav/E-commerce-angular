@@ -1,5 +1,7 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
+import {  ChangeDetectorRef } from '@angular/core';
 import { CartService } from '../services/cart.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,17 +11,25 @@ import { CartService } from '../services/cart.service';
 export class HeaderComponent {
   navbarOpen = false;
 
+  @Input() isLoggedIn: any;
+  @Input() username: any;
+
+  logout() {
+    this.auth.logOut();
+  }
+
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  cartItems:any = [];
+  cartItems: any = [];
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private auth: AuthService) { }
 
   ngOnInit(): void {
-    this.cartService.getCartItems().subscribe((items:any) => {
+    this.cartService.getCartItems().subscribe((items: any) => {
       this.cartItems = items;
     });
+
   }
 }
