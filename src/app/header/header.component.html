@@ -13,13 +13,10 @@
                     <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
                         routerLink="/"><i class="fas fa-home me-2"></i>Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" routerLink="products"><i
-                            class="fas fa-box me-2"></i>Products</a>
                 <li class="nav-item" *ngIf="isLoggedIn">
                     <a class="nav-link" routerLinkActive="active" routerLink="products"><i class="fas fa-box me-2"></i>Products</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" *ngIf="isLoggedIn">
                     <a class="nav-link" routerLinkActive="active" routerLink="carts"><i
                             class="fas fa-shopping-cart me-2"></i>Cart <span *ngIf="cartItems.length>0"
                             class="badge bg-success"> {{cartItems.length}}</span></a>

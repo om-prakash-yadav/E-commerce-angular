@@ -2,6 +2,7 @@ import {  ChangeDetectorRef } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +17,7 @@ export class HeaderComponent {
 
   logout() {
     this.auth.logOut();
+    this.router.navigateByUrl('login');
   }
 
   toggleNavbar() {
@@ -24,7 +26,7 @@ export class HeaderComponent {
 
   cartItems: any = [];
 
-  constructor(private cartService: CartService, private auth: AuthService) { }
+  constructor(private cartService: CartService, private auth: AuthService ,private router:Router ) { }
 
   ngOnInit(): void {
     this.cartService.getCartItems().subscribe((items: any) => {

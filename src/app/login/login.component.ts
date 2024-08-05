@@ -16,5 +16,6 @@ export class LoginComponent {
   }
   onLogin(){
     this.auth.logIn(this.username);
+    this.router.navigateByUrl('');
   }
 }
