@@ -1,5 +1,5 @@
 <section class="cart">
-    <div class="container">
+    <div  *ngIf="cartItems.length>0" class="container">
         <h1 class="cart-title">Your Shopping Cart</h1>
         <div class="cart-items">
             <div *ngFor="let item of cartItems" class="cart-item row">
@@ -12,7 +12,7 @@
                     <p>${{item.price}}</p>
                 </div>
                 <div class="col-md-3 d-flex align-items-center justify-content-end">
-                    <input type="number" value="{{item.quantity}}" min="1" class="form-control me-3">
+                    <input type="number" (change)="updatePrice($event, item)" value="{{item.quantity}}" min="1" class="form-control me-3">
                     <button (click)="removeFromCart(item)" class="btn btn-danger remove-item">Remove</button>
                 </div>
             </div>
@@ -22,5 +22,9 @@
             <p>Subtotal: <span class="subtotal">${{totalPrice}}</span></p>
             <button class="btn btn-dark checkout-btn" (click)="checkout()">Proceed to Checkout</button>
         </div>
+    </div>
+    <div *ngIf="cartItems.length==0" class="container">
+        <h1 class="cart-title">Your cart is empty!</h1>
+            <img src="../../assets/images/cart.jpg" alt="Running Shoes" height="200"  class=" rounded mx-auto d-block">
     </div>
 </section>

@@ -19,10 +19,7 @@ export class CartService {
 
   addToCart(product: any) {
     const index = this.cartItems.indexOf(product);
-    if (index > -1) {
-      product.quantity++;
-    }
-    else {
+    if (index == -1){
       product.quantity = 1;
       this.cartItems.push(product);
       this.cartItemsSubject.next(this.cartItems);
