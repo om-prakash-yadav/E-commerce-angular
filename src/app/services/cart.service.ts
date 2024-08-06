@@ -7,10 +7,13 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class CartService {
   private cartItems: any = [];
   private cartItemsSubject = new BehaviorSubject<any>(this.cartItems);
+ 
 
   getCartItems() {
     return this.cartItemsSubject.asObservable();
   }
+
+  
 
   addToCart(product: any) {
     this.cartItems.push(product);
