@@ -8,7 +8,8 @@
     gap: 10px;
     justify-content: space-around;
     padding: 20px;
-    background-color: rgb(13, 6, 31);
+    background-color: #fff;
+    
 }
 
 .product-card {
@@ -22,10 +23,11 @@
     width: 350px;
     text-align: center;
     padding: 20px;
+    border: 1px solid gray;
 }
 
 .product-image img {
-    width: 100%;
+    width: 90%;
     height: 200px;
     object-fit: contain;
     border-radius: 10px;
