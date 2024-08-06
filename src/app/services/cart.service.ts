@@ -18,12 +18,19 @@ export class CartService {
 
 
   addToCart(product: any) {
-    this.cartItems.push(product);
-    this.cartItemsSubject.next(this.cartItems);
-    let data = JSON.stringify(product);
-    this.http.post(this.apiUrl, data).subscribe((response)=>{
-      console.log(response);
-    })
+    const index = this.cartItems.indexOf(product);
+    if (index > -1) {
+      product.quantity++;
+    }
+    else {
+      product.quantity = 1;
+      this.cartItems.push(product);
+      this.cartItemsSubject.next(this.cartItems);
+      let data = JSON.stringify(product);
+      this.http.post(this.apiUrl, data).subscribe((response) => {
+        console.log(response);
+      })
+    }
   }
 
   removeFromCart(product: any) {
@@ -31,7 +38,7 @@ export class CartService {
     if (index > -1) {
       this.cartItems.splice(index, 1);
       this.cartItemsSubject.next(this.cartItems);
-      this.http.delete(`${this.apiUrl}/${product.id}`).subscribe((response)=>{
+      this.http.delete(`${this.apiUrl}/${product.id}`).subscribe((response) => {
         console.log(response);
       })
     }
