@@ -131,6 +131,28 @@ input[type="number"] {
 }
 
 
+.modal.show {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+}
+
+.modal-dialog {
+    margin: 1.75rem auto;
+    max-width: 500px;
+}
+
+
 @media (max-width: 768px) {
     .cart-item {
         flex-direction: column;
@@ -159,3 +181,6 @@ input[type="number"] {
         width: 100%;
     }
 }
+
+
+

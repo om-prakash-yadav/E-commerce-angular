@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes:Routes = [
   {path:'',component:HomeComponent},
@@ -15,6 +16,7 @@ const routes:Routes = [
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
+  {path:'checkout',component:CheckoutComponent},
   {path:'not-found',component:NotFoundComponent},
   {path:'**',redirectTo:'not-found'}
 ]
