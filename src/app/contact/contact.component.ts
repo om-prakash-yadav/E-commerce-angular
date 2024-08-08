@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  
+  onFormSubmitHandler(form1:any){
+    console.log(form1.value);
+   }
 
 }
