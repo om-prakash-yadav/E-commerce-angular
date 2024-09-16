@@ -1,0 +1,243 @@
+{
+  "products": [
+    {
+      "image": "../../assets/images/product1.png",
+      "alt": "Running Shoes",
+      "title": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes",
+      "price": "60",
+      "id": "92bc"
+    },
+    {
+      "image": "../../assets/images/product2.png",
+      "alt": "Basketball Shoes",
+      "title": "Basketball Shoes",
+      "description": "High-top shoes for better ankle support",
+      "price": "150",
+      "id": "49a1"
+    },
+    {
+      "image": "../../assets/images/product3.png",
+      "alt": "Running Shoes",
+      "title": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes everyday",
+      "price": "120",
+      "id": "dbd0"
+    },
+    {
+      "image": "../../assets/images/product4.png",
+      "alt": "Casual Sneakers",
+      "title": "Casual Sneakers",
+      "description": "Stylish and comfortable sneakers everyday",
+      "price": "90",
+      "id": "0877"
+    },
+    {
+      "image": "../../assets/images/product5.png",
+      "alt": "Running Shoes",
+      "title": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes everyday",
+      "price": "120",
+      "id": "a8fa"
+    },
+    {
+      "image": "../../assets/images/product6.png",
+      "alt": "Basketball Shoes",
+      "title": "Basketball Shoes",
+      "description": "High-top shoes for better ankle support",
+      "price": "150",
+      "id": "79f9"
+    },
+    {
+      "image": "../../assets/images/product7.png",
+      "alt": "Casual Sneakers",
+      "title": "Casual Sneakers",
+      "description": "Stylish and comfortable sneakers",
+      "price": "90",
+      "id": "7874"
+    },
+    {
+      "image": "../../assets/images/product8.png",
+      "alt": "Basketball Shoes",
+      "title": "Nike Airmax",
+      "description": "High end Cushion at the bottom",
+      "price": "15",
+      "id": "e8b7"
+    },
+    {
+      "image": "../../assets/images/product9.png",
+      "alt": "Basketball Shoes",
+      "title": "Women 361 degree",
+      "description": "Best Party Wear and the attitude of om",
+      "price": "1500",
+      "id": "4d25"
+    },
+    {
+      "image": "../../assets/images/product10.png",
+      "alt": "Basketball Shoes",
+      "title": "Yellow Gazelle Shoes",
+      "description": "Adidas Trademark and durable",
+      "price": "10",
+      "id": "8d04"
+    },
+    {
+      "image": "../../assets/images/product11.png",
+      "alt": "Basketball Shoes",
+      "title": "Football Pro Nation",
+      "description": "The Ronaldo's choice against messi",
+      "price": "1050",
+      "id": "8aec"
+    },
+    {
+      "image": "../../assets/images/product12.png",
+      "alt": "Basketball Shoes",
+      "title": "Nike Airmax",
+      "description": "Stylish blue in colour with extra padding",
+      "price": "1500",
+      "id": "eaee"
+    },
+    {
+      "image": "../../assets/images/product13.png",
+      "alt": "Basketball Shoes",
+      "title": "Kids favourite shoes",
+      "description": "high end comfort for your child",
+      "price": "1590",
+      "id": "f112"
+    },
+    {
+      "image": "../../assets/images/product14.png",
+      "alt": "Basketball Shoes",
+      "title": "Adidas mat shoes",
+      "description": "Le panga on the mat",
+      "price": "150",
+      "id": "2421"
+    },
+    {
+      "image": "../../assets/images/product15.png",
+      "alt": "Basketball Shoes",
+      "title": "Football studs",
+      "description": "Adidas pro bot international favourite",
+      "price": "15000",
+      "id": "ec92"
+    },
+    {
+      "image": "../../assets/images/product16.png",
+      "alt": "Basketball Shoes",
+      "title": "Kidos Comfor",
+      "description": "Mickey mouse for the toddlers and pre school",
+      "price": "10",
+      "id": "a79c"
+    },
+    {
+      "image": "../../assets/images/product17.png",
+      "alt": "Basketball Shoes",
+      "title": "Air Jordan",
+      "description": "Top quality sole with 7cm thickness",
+      "price": "15000",
+      "id": "99b5"
+    },
+    {
+      "image": "../../assets/images/product18.png",
+      "alt": "Basketball Shoes",
+      "title": "Skechers Support",
+      "description": "The Ultimate fashion of the Heroes",
+      "price": "1090",
+      "id": "b44e"
+    },
+    {
+      "image": "../../assets/images/product19.png",
+      "alt": "Basketball Shoes",
+      "title": "Golden Studs",
+      "description": "Best selling and in high demand",
+      "price": "15090",
+      "id": "850e"
+    },
+    {
+      "image": "../../assets/images/product20.png",
+      "alt": "Basketball Shoes",
+      "title": "The High Mover",
+      "description": "Sole of Top quality with maximum comfort",
+      "price": "1500",
+      "id": "c438"
+    },
+    {
+      "image": "../../assets/images/product21.png",
+      "alt": "Basketball Shoes",
+      "title": "Red Velvet Shoes",
+      "description": "Your comfort key and the saviour in heat",
+      "price": "160",
+      "id": "43de"
+    },
+    {
+      "image": "../../assets/images/product22.png",
+      "alt": "Basketball Shoes",
+      "title": "Pink Nike Shoes",
+      "description": "Supported by International Athletes",
+      "price": "10950",
+      "id": "c984"
+    },
+    {
+      "image": "../../assets/images/product23.png",
+      "alt": "Basketball Shoes",
+      "title": "Air Jordan Black",
+      "description": "Sole of Medium thickness with large size",
+      "price": "15090",
+      "id": "471a"
+    },
+    {
+      "image": "../../assets/images/product24.png",
+      "alt": "Basketball Shoes",
+      "title": "Adidas Casual A-500",
+      "description": "The Best Seller of the year",
+      "price": "10",
+      "id": "c550"
+    }
+  ],
+  "cartItems": [
+    {
+      "image": "../../assets/images/product1.png",
+      "alt": "Running Shoes",
+      "title": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes",
+      "price": "60",
+      "id": "92bc",
+      "quantity": 2
+    },
+    {
+      "id": "49a1",
+      "image": "../../assets/images/product2.png",
+      "alt": "Basketball Shoes",
+      "title": "Basketball Shoes",
+      "description": "High-top shoes for better ankle support",
+      "price": "150",
+      "quantity": 1
+    },
+    {
+      "id": "92bc",
+      "image": "../../assets/images/product1.png",
+      "alt": "Running Shoes",
+      "title": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes",
+      "price": "60",
+      "quantity": 1
+    },
+    {
+      "id": "49a1",
+      "image": "../../assets/images/product2.png",
+      "alt": "Basketball Shoes",
+      "title": "Basketball Shoes",
+      "description": "High-top shoes for better ankle support",
+      "price": "150",
+      "quantity": 1
+    },
+    {
+      "id": "dbd0",
+      "image": "../../assets/images/product3.png",
+      "alt": "Running Shoes",
+      "title": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes everyday",
+      "price": "120",
+      "quantity": 1
+    }
+  ]
+}
